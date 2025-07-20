@@ -14,8 +14,8 @@ const Card: React.FC = () => {
     <div className="flex flex-row flex-wrap gap-8 mt-8 justify-center items-center">
       <div className="h-[422px] w-[378.56px] cursor-pointer hover:shadow-md hover:rounded-lg ">
       <Image className="rounded-lg" src={HOUSE_IMAGE} width={378.56} height={299.37} alt="house image" />
-      <div className="p-2 flex gap-2 mt-2">
-        <Pill title="Top Villa" />
+      <div className="p-2 flex gap-2 mt-2 text-black">
+        <Pill title="Top Villa"/>
         <Pill title="Self CheckIn" />
         <Pill title="Free Reschedule" />
       </div>
