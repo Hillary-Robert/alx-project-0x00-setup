@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "@/components/Card";
-import Button from "../components/Button";
+import Button from "@/components/Button";
 
 const Landing: React.FC = () => {
   return (
@@ -17,6 +17,8 @@ const Landing: React.FC = () => {
           <Button title="Large Rounded-full" styles="text-lg px-6 py-3 rounded-full" />
           <Button title="Large Rounded-sm" styles="text-lg px-6 py-3 rounded-sm" />
           <Button title="Small Rounded-full" styles="text-sm px-3 py-1 rounded-full" />
+          <Button title="Medium Rounded-lg" styles="text-base px-4 py-2 rounded-lg" />
+
         </div>
       </div>
     </div>
