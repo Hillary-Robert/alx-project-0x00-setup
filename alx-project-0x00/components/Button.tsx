@@ -12,21 +12,25 @@ const sizeStyles = {
 
 
 
-const Button: React.FC<ButtonProps> =({
+const Button: React.FC<ButtonProps> = ({
   title,
   size = "medium",
-  shape = "rounded-md",
-  className ='',
-})=>{
+  rounded = "rounded-md",
+  className = '',
+  styles = '',
+}) => {
   const sizeClass = sizeStyles[size] || sizeStyles.medium;
 
   return (
-    <div>
-      <button className="bg-white text-black p-2">{sizeClass}</button>
-    </div>
-  )
+    <button
+      className={`bg-white text-black ${sizeClass} ${rounded} ${className} ${styles}`}
+    >
+      {title}
+    </button>
+  );
+};
 
-}
+
 
 
 export default Button;
